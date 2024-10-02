@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+    input[placeholder*="ber"]{
+        background-color: rgb(233, 169, 169);
+        font-size: 20px;
+    }
+    input[value$="t"]{
+        background-color: rgb(184, 223, 237);
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+    input[type|=password]{
+        background-color: bisque;
+        font-size: 20px;
+        
+    }
+  input[alt^="name"]{
+    background-color: rgb(246, 151, 151);
+    margin-top: 3px;
+    font-size: 20px;
+  }
+  input[alt~=user]{
+    background-color: rgb(16, 159, 211);
+    font-size: 20px;
+  }
+  input[alt^="mail"]{
+    background-color: rgb(194, 211, 178);
+    font-size: 20px;
+  }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><form>
+    <span class="name">Name:</span>
+        <label for="Name"></label>
+        <input type="text"  alt="name"/><br><br>
+        <span class="id">user id:</span>
+        <label for="user_id"></label>
+        <input type="text"  alt="user"/><br><br>
+       <span class="mail"> Email:</span>
+        <label for="mail"></label>
+        <input type="mail" alt="mail"/><br><br>
+        <span class="gender">Gender:</span>
+        <label for="gender"></label>
+        <input type="radio" value="male" name="gender">male
+        <input type="radio" value="Female" name="gender">female <br><br>
+       <span class="psw"> Password:</span>
+        <label for="paswrd"></label>
+        <input type="password"/><br><br>
+        <span class="nub">Mobile Number:</span>
+        <label for="number"></label>
+        <input type="tel" pattern="[0,9]{10}"/><br><br>
+        <input type="submit" value="submit" alt="sb"></div>
+</form>
+    
+</body>
+</html>
